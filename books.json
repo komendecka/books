@@ -1,0 +1,92 @@
+[
+  {
+    "author": "Chinua Achebe",
+    "country": "Nigeria",
+    "read": "true",
+    "title": "Things Fall Apart",
+    "year": 1958
+  },
+  {
+    "author": "Hans Christian Andersen",
+    "country": "Denmark",
+    "read": "false",
+    "title": "Fairy tales",
+    "year": 1836
+  },
+  {
+    "author": "Dante Alighieri",
+    "country": "Italy",
+    "read": "true",
+    "title": "The Divine Comedy",
+    "year": 1315
+  },
+  {
+    "author": "Unknown",
+    "country": "Sumer and Akkadian Empire",
+    "read": "false",
+    "title": "The Epic Of Gilgamesh",
+    "year": -1700
+  },
+  {
+    "author": "Unknown",
+    "country": "Achaemenid Empire",
+    "read": "true",
+    "title": "The Book Of Job",
+    "year": -600
+  },
+  {
+    "author": "Unknown",
+    "country": "India/Iran/Iraq/Egypt/Tajikistan",
+    "read": "false",
+    "title": "One Thousand and One Nights",
+    "year": 1200
+  },
+  {
+    "id": "1",
+    "author": "Unknown",
+    "country": "Iceland",
+    "read": "true",
+    "title": "Nj\u00e1l's Saga",
+    "year": 1350
+  },
+  {
+    "id": "2",
+    "author": "Jane Austen",
+    "country": "United Kingdom",
+    "read": "false",
+    "title": "Pride and Prejudice",
+    "year": 1813
+  },
+  {
+    "id": "3",
+    "author": "Honor de Balzac",
+    "country": "France",
+    "read": "true",
+    "title": "Le P\u00e8re Goriot",
+    "year": 1835
+  },
+  {
+    "id": "4",
+    "author": "Samuel Beckett",
+    "country": "Republic of Ireland",
+    "read": "false",
+    "title": "Molloy, Malone Dies, The Unnamable, the trilogy",
+    "year": 1952
+  },
+  {
+    "id": "5",
+    "author": "Giovanni Boccaccio",
+    "country": "Italy",
+    "read": "true",
+    "title": "The Decameron",
+    "year": 1351
+  },
+  {
+    "id": "6",
+    "author": "Jorge Luis Borges",
+    "country": "Argentina",
+    "read": "false",
+    "title": "Ficciones",
+    "year": 1965
+  }
+]
