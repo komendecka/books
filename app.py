@@ -1,13 +1,19 @@
 from flask import Flask, jsonify, abort, make_response, request, render_template
 from models import books
+import json
 
 
 app = Flask(__name__)
 app.config["SECRET_KEY"] = "nininini"
 
+# curl -H "Content-Type: application/json" --request POST 127.0.0.1:5000/api/v1/bookss --data '{"title":"xyz","author":"xyz","read":"true"}'
+
+
 @app.route('/', methods=['GET'])
 def index():
-    return render_template('books.html')
+    with open('books.json', 'r') as json_file:
+        data = json.load(json_file)
+    return render_template('books.html', books=data)
 
 
 @app.route("/api/v1/books/", methods=["GET"])
@@ -23,7 +29,7 @@ def get_book(book_id):
     return jsonify({"book": book})
 
 
-@app.route("/api/v1/books/", methods=["POST"])
+@app.route("/api/v1/bookss", methods=["POST"])
 def create_book():
     if not request.json or not 'title' in request.json:
         abort(400)
@@ -39,6 +45,8 @@ def create_book():
 
 @app.route("/api/v1/books/<int:book_id>", methods=['DELETE'])
 def delete_book(book_id):
+    # print(book_id)
+    # result = ''
     result = books.delete(book_id)
     if not result:
         abort(404)
